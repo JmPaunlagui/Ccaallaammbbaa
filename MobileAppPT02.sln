@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileAppPT02", "MobileAppPT02\MobileAppPT02.csproj", "{DD5796B2-1115-4BEB-A0B0-5ABB71B88ECB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD5796B2-1115-4BEB-A0B0-5ABB71B88ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5796B2-1115-4BEB-A0B0-5ABB71B88ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5796B2-1115-4BEB-A0B0-5ABB71B88ECB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DD5796B2-1115-4BEB-A0B0-5ABB71B88ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5796B2-1115-4BEB-A0B0-5ABB71B88ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD5796B2-1115-4BEB-A0B0-5ABB71B88ECB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {062F6AA0-3895-4DBB-BB43-E349C5819E68}
+	EndGlobalSection
+EndGlobal
