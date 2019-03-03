@@ -7,6 +7,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
 
@@ -15,12 +16,15 @@ namespace MobileAppPT02
     [Activity(Label = "HomeActivity", Theme = "@style/AppTheme")]
     public class HomeActivity : Activity
     {
+        static readonly string TAG = "Y: " + typeof(HomeActivity).Name;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
             SetContentView(Resource.Layout.activity_home);
+            Log.Debug(TAG, "Home activity deployed");
         }
 
         public override void OnBackPressed()
@@ -38,6 +42,7 @@ namespace MobileAppPT02
             });
             Dialog diag = alertdiag.Create();
             diag.Show();
+            Log.Debug(TAG, "OnBackPressed Triggered");
         }
     }
 }

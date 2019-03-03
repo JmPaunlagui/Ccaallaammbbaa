@@ -4,4 +4,9 @@
     <color name="colorPrimary">#FF9200</color>   
     <color name="colorAccent">#F7D202</color>
     <color name="textColorPrimary">#FFFFFF</color>
+  <color name="splash_background">#FFFFFF</color>
+
+    
+  
+ 
 </resources>
