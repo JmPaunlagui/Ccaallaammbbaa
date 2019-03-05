@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+	android:background="@drawable/gradient3"
+	android:padding="5dp"
+	>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		>
+		<Space
+			android:layout_width="match_parent"
+			android:layout_height="116dp"
+			
+		/>
+	<TextView
+		
+		android:text="Hi!"
+		android:textStyle="bold"
+		android:textSize="90sp"
+		android:textColor="@color/textColorPrimary"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="311dp"
+		android:layout_height="wrap_content"
+			android:textAlignment="textEnd"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/textView1" />
+	<TextView
+		android:text="Looking for a place to hang out?"
+			android:layout_width="311dp"
+		android:layout_height="wrap_content"
+			android:textAlignment="textEnd"
+		android:textColor="@color/textColorPrimary"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		
+		android:id="@+id/textView2" />
 
-</LinearLayout>
+	</LinearLayout>
+
+	<include
+		android:id="@+id/drawer"
+		layout="@layout/layout_bottom_sheet_3"
+	/>
+
+</android.support.design.widget.CoordinatorLayout>
