@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Calambeño</string>
     <string name="action_settings">Settings</string>
+  <string name="Looking">Looking</string>
+  <string name="For">for a place to</string>
+  <string name="Hang">Hang out?</string>
 </resources>
