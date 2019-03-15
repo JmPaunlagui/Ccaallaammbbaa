@@ -18,7 +18,7 @@ namespace MobileAppPT02.Fragments
     public class FoodFragment : Android.Support.V4.App.Fragment
     {
 
-        private CardView cvDTH1, cvDH1, cvTTS1;
+        private CardView cvDTH1, cvDH1, cvTTS1, cvIP1;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -35,14 +35,25 @@ namespace MobileAppPT02.Fragments
             cvDTH1 = viewFood.FindViewById<CardView>(Resource.Id.cvDTH);            
             cvDH1 = viewFood.FindViewById<CardView>(Resource.Id.cvDH);
             cvTTS1 = viewFood.FindViewById<CardView>(Resource.Id.cvTTS);
+            cvIP1 = viewFood.FindViewById<CardView>(Resource.Id.cvIP);
 
 
             //Click listener
             cvDTH1.Click += CvDTH_Click;
             cvDH1.Click += CvDH_Click;
             cvTTS1.Click += CvTTS_Click;
+            cvIP1.Click += CvIP_Click;
       
             return viewFood;
+        }
+
+        private void CvIP_Click(object sender, EventArgs e)
+        {
+            var transsss = Activity.SupportFragmentManager.BeginTransaction();
+            transsss.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
+            transsss.Replace(Resource.Id.fragmentContainer, new IpponYariFragment(), "IpponYariFragment");
+            transsss.AddToBackStack(null);
+            transsss.Commit();
         }
 
         private void CvTTS_Click(object sender, EventArgs e)

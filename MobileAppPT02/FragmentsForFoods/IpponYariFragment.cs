@@ -25,10 +25,12 @@ namespace MobileAppPT02.FragmentsForFoods
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            // Use this to return your custom view for this Fragment
-            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
+            View view = inflater.Inflate(Resource.Layout.fragmentIpponYari, container, false);
 
-            return base.OnCreateView(inflater, container, savedInstanceState);
+            Android.Support.V7.Widget.Toolbar toolbar = view.FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.tooLbar);
+            toolbar.Title = "Ippon Yari";
+
+            return view;
         }
     }
 }
