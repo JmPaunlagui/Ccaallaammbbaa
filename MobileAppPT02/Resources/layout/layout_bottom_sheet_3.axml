@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 	android:orientation="vertical"
-	android:id="@+id/bottom_sheet_container"
 	android:gravity="center"
 	android:background="@drawable/gradient3"
 	android:layout_gravity="bottom"
@@ -16,24 +15,5 @@
 	android:focusable="true"
 >
 	
-	<FrameLayout
-		
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:id="@+id/fragment_Container"
-		/>
-
-	<android.support.design.widget.BottomNavigationView
-		android:layout_width="match_parent"
-		android:layout_height="56dp"
-		android:layout_gravity="start"
-		android:background="@color/WHITE"
-		android:layout_marginBottom="50dp"
-		app:elevation="16dp"
-		android:id="@+id/navigation" 
-		app:menu="@menu/bottom_navigation_menu"
-	
-	/>
-
 
 </LinearLayout>

@@ -5,6 +5,8 @@ using Android.Views;
 using SupportFragment = Android.Support.V4.App.Fragment;
 using Android.Support.Design.Widget;
 using Android.Support.V4.App;
+using Android.Support.V7.Widget;
+using Android.Widget;
 
 namespace MobileAppPT02.Fragments
 {
@@ -21,9 +23,10 @@ namespace MobileAppPT02.Fragments
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your fragment her         
+            // Create your fragment her     
+            
         }
-
+        
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             View view = inflater.Inflate(Resource.Layout.fragmentMainContainer, container, false);
@@ -68,6 +71,8 @@ namespace MobileAppPT02.Fragments
             mCurrentFragment = mFragment1;
 
             return view;
+
         }
+       
     }
 }

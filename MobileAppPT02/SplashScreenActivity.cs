@@ -24,6 +24,7 @@ namespace MobileAppPT02
             base.OnResume();
             Task Startup = new Task(() => { SimulateStartup(); });
             Startup.Start();
+            
         }
         public override void OnBackPressed() { }
 
@@ -32,7 +33,9 @@ namespace MobileAppPT02
             Log.Debug(TAG, "Performing Start Up");
             await Task.Delay(1000);
             Log.Debug(TAG, "Starting HomeActivity");
-            StartActivity(new Intent(Application.Context, typeof(HomeActivity)));
+            StartActivity(new Intent (Application.Context, typeof(HomeActivity)));
+            
+            
         }
     }
 }

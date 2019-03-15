@@ -1,7 +1,27 @@
 <resources>
     <string name="app_name">Calambeño</string>
     <string name="action_settings">Settings</string>
-  <string name="Looking">Looking</string>
-  <string name="For">for a place to</string>
-  <string name="Hang">Hang out?</string>
+    <string name="Looking">Looking</string>
+    <string name="For">for a place to</string>
+    <string name="Hang">Hang out?</string>
+
+    <string name="dthtxt1">Filipino and Chinese Cuisine</string>
+    <string name="dthtxt2">National Hwy Manila, Philippines 4027</string>
+    <string name="dthtxt3">(049) 545-2834</string>
+    <string name="dthtxt4">www.davidsteahouse.net</string>
+    <string name ="dthtxt5" >Monday - Sunday : 10:00 AM to 10:00 PM</string>
+
+    <string name="dhtxt1">Chinese Cuisine and Filipino</string>
+    <string name="dhtxt2">National Hwy, 4027, Calamba City, Laguna</string>
+    <string name="dhtxt3">(049) 545-1905</string>
+    <string name="dhtxt4">Monday : 9:00 AM to 10:00 PM</string>
+    <string name ="dhtxt5">Tuesday : 11:00 AM to 6:00 PM</string>
+    <string name="dhtxt6">Wednesday : 9:00 AM to 10:00 PM</string>
+    <string name="dhtxt7">Thrusday : 10:00 AM to 7:00 PM</string>
+    <string name="dhtxt8">Friday : 11:00 AM to 7:00 PM</string>
+    <string name="dhtxt9">Saturday : 10:00 AM to 9:00 PM</string>
+    <string name="dhtxt10">Sunday : 9:00 AM to 8:00 PM</string>
+  
+
+
 </resources>

@@ -21,6 +21,7 @@ namespace MobileAppPT02
     public class HomeActivity : AppCompatActivity
     {
         static readonly string TAG = "Y: " + typeof(HomeActivity).Name;
+        
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -31,24 +32,18 @@ namespace MobileAppPT02
             Log.Debug(TAG, "Home activity deployed");
 
             TextView textView = FindViewById<TextView>(Resource.Id.OpenBottomSheet);
-            textView.Click += textView_Click;
+            textView.Click += TextView_Click;
 
         }
 
-        private void textView_Click(object sender, EventArgs e)
-        {
-           
+        private void TextView_Click(object sender, EventArgs e)
+        {          
            var trans = SupportFragmentManager.BeginTransaction();
+           trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
            trans.Add(Resource.Id.fragmentContainer, new MaincontainerFragment(), "MaincontainerFragment" );
-            trans.Commit();
-            return;
-        }
-
-        public override void OnBackPressed()
-        {
-            OnDestroy();
-            Finish();
-            Log.Debug(TAG, "OnBackPressed Triggered");
+           trans.AddToBackStack(null);
+           trans.Commit();
+           return;
         }
     }
 }
