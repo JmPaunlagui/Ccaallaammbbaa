@@ -61,8 +61,16 @@
   <ItemGroup>
     <Compile Include="FragmentsForFoods\DavidsTeaHouseFragment.cs" />
     <Compile Include="FragmentsForFoods\DingHaoFragment.cs" />
+    <Compile Include="FragmentsForFoods\FRating\DHrating.cs" />
+    <Compile Include="FragmentsForFoods\FRating\DTHrating.cs" />
+    <Compile Include="FragmentsForFoods\FRating\IPrating.cs" />
+    <Compile Include="FragmentsForFoods\FRating\TTrating.cs" />
     <Compile Include="FragmentsForFoods\IpponYariFragment.cs" />
     <Compile Include="FragmentsForFoods\TonTonsFragment.cs" />
+    <Compile Include="FragmentsForTourist\RizalSFragment.cs" />
+    <Compile Include="FragmentsForTourist\SJBCFragment.cs" />
+    <Compile Include="FragmentsForTourist\TRating\RsRating.cs" />
+    <Compile Include="FragmentsForTourist\TRating\SjbcRating.cs" />
     <Compile Include="Fragments\FoodFragment.cs" />
     <Compile Include="Fragments\MaincontainerFragment.cs" />
     <Compile Include="Fragments\HistoryFragment.cs" />
@@ -241,6 +249,26 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Bottom_sheet_IP_Rating.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\fragmentSJBC.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\fragmentRizalS.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\bottom_sheet_SJBC_Rating.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\bottom_sheet_RS_Rating.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -7,15 +7,19 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.Design.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using MobileAppPT02.FragmentsForFoods.FRating;
 
 namespace MobileAppPT02.FragmentsForFoods
 {
     public class IpponYariFragment : Android.Support.V4.App.Fragment
     {
-    
+
+        private FloatingActionButton IPfloat;
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -29,6 +33,16 @@ namespace MobileAppPT02.FragmentsForFoods
 
             Android.Support.V7.Widget.Toolbar toolbar = view.FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.tooLbar);
             toolbar.Title = "Ippon Yari";
+
+            IPfloat = view.FindViewById<FloatingActionButton>(Resource.Id.ipFloatAB);
+            IPfloat.Click += (s, e) => {
+                var trans = Activity.SupportFragmentManager.BeginTransaction();
+                trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
+                trans.Add(Resource.Id.fragmentContainer, new IPrating(), "IPrating");
+                trans.AddToBackStack(null);
+                trans.Commit();
+                return;
+            };
 
             return view;
         }

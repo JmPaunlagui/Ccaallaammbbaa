@@ -12,6 +12,7 @@ using Android.Support.V4.App;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using MobileAppPT02.FragmentsForFoods.FRating;
 using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 
 
@@ -19,7 +20,7 @@ namespace MobileAppPT02.FragmentsForFoods
 {
     public class DavidsTeaHouseFragment : Android.Support.V4.App.Fragment
     {
-        private float mLastPosY;
+        private FloatingActionButton DTHfloat;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,6 +35,16 @@ namespace MobileAppPT02.FragmentsForFoods
 
             Android.Support.V7.Widget.Toolbar toolbar = view.FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.tooLbar);
             toolbar.Title = "David's Tea House";
+
+            DTHfloat = view.FindViewById<FloatingActionButton>(Resource.Id.dthFloatAB);
+            DTHfloat.Click += (s, e) => {
+                var trans = Activity.SupportFragmentManager.BeginTransaction();
+                trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
+                trans.Add(Resource.Id.fragmentContainer, new DTHrating(), "DTHrating");
+                trans.AddToBackStack(null);
+                trans.Commit();
+                return;
+            };
 
             return view;
 
