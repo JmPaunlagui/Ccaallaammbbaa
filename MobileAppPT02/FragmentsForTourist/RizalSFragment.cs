@@ -7,14 +7,19 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.Design.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using MobileAppPT02.FragmentsForTourist.TRating;
 
 namespace MobileAppPT02.FragmentsForTourist
 {
-    public class RizalSFragment : Fragment
+    public class RizalSFragment : Android.Support.V4.App.Fragment
     {
+
+        private FloatingActionButton rsFloat;
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -24,10 +29,22 @@ namespace MobileAppPT02.FragmentsForTourist
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            // Use this to return your custom view for this Fragment
-            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
+            View view = inflater.Inflate(Resource.Layout.fragmentRizalS, container, false);
 
-            return base.OnCreateView(inflater, container, savedInstanceState);
+            Android.Support.V7.Widget.Toolbar toolbar = view.FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.tooLbar);
+            toolbar.Title = "Rizal Shrine";
+
+            rsFloat = view.FindViewById<FloatingActionButton>(Resource.Id.rsFloatAB);
+            rsFloat.Click += (s, e) => {
+                var trans = Activity.SupportFragmentManager.BeginTransaction();
+                trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
+                trans.Add(Resource.Id.fragmentContainer, new RsRating(), "RsRating");
+                trans.AddToBackStack(null);
+                trans.Commit();
+                return;
+            };
+
+            return view; 
         }
     }
 }

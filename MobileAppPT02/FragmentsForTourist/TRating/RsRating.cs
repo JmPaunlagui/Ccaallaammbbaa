@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace MobileAppPT02.FragmentsForTourist.TRating
 {
-    public class RsRating : Fragment
+    public class RsRating : Android.Support.V4.App.Fragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -24,10 +24,8 @@ namespace MobileAppPT02.FragmentsForTourist.TRating
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            // Use this to return your custom view for this Fragment
-            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-
-            return base.OnCreateView(inflater, container, savedInstanceState);
+            View view = inflater.Inflate(Resource.Layout.bottom_sheet_RS_Rating, container, false);
+            return view;
         }
     }
 }

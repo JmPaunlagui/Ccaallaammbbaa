@@ -54,6 +54,7 @@ namespace MobileAppPT02.Fragments
             transsss.Replace(Resource.Id.fragmentContainer, new IpponYariFragment(), "IpponYariFragment");
             transsss.AddToBackStack(null);
             transsss.Commit();
+            return;
         }
 
         private void CvTTS_Click(object sender, EventArgs e)
@@ -63,6 +64,7 @@ namespace MobileAppPT02.Fragments
             transss.Replace(Resource.Id.fragmentContainer, new TonTonsFragment(), "TonTonsFragment");           
             transss.AddToBackStack(null);
             transss.Commit();
+            return;
         }
 
         private void CvDH_Click(object sender, EventArgs e)
@@ -72,6 +74,7 @@ namespace MobileAppPT02.Fragments
             transs.Replace(Resource.Id.fragmentContainer, new DingHaoFragment(), "DingHaoFragment");
             transs.AddToBackStack(null);
             transs.Commit();
+            return;
         }
 
         private void CvDTH_Click(object sender, EventArgs e)
@@ -81,6 +84,7 @@ namespace MobileAppPT02.Fragments
             trans.Replace(Resource.Id.fragmentContainer, new DavidsTeaHouseFragment(), "DavidsTeaHouseFragment");
             trans.AddToBackStack(null);
             trans.Commit();
+            return;
         }
     }
 }
