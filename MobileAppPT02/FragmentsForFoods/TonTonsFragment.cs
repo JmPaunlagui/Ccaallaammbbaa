@@ -38,7 +38,7 @@ namespace MobileAppPT02.FragmentsForFoods
             TTfloat.Click += (s, e) => {
                 var trans = Activity.SupportFragmentManager.BeginTransaction();
                 trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-                trans.Add(Resource.Id.fragmentContainer, new TTrating(), "TTrating");
+                trans.Replace(Resource.Id.fragmentContainer, new TTrating(), "TTrating");
                 trans.AddToBackStack(null);
                 trans.Commit();
                 return;

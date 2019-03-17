@@ -38,7 +38,7 @@ namespace MobileAppPT02.FragmentsForTourist
             rsFloat.Click += (s, e) => {
                 var trans = Activity.SupportFragmentManager.BeginTransaction();
                 trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-                trans.Add(Resource.Id.fragmentContainer, new RsRating(), "RsRating");
+                trans.Replace(Resource.Id.fragmentContainer, new RsRating(), "RsRating");
                 trans.AddToBackStack(null);
                 trans.Commit();
                 return;

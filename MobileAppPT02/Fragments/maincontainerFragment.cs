@@ -60,9 +60,9 @@ namespace MobileAppPT02.Fragments
 
             var trans = Activity.SupportFragmentManager.BeginTransaction();
 
-            trans.Add(Resource.Id.frameLayout1, mFragment3, "HistoryFragment");//NOT bottom_navigation, it must be the container
+            trans.Replace(Resource.Id.frameLayout1, mFragment3, "HistoryFragment");//NOT bottom_navigation, it must be the container
             trans.Hide(mFragment3);
-            trans.Add(Resource.Id.frameLayout1, mFragment2, "TouristFragment");
+            trans.Replace(Resource.Id.frameLayout1, mFragment2, "TouristFragment");
             trans.Hide(mFragment2);
             trans.Add(Resource.Id.frameLayout1, mFragment1, "FoodFragment");
 

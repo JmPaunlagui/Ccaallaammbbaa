@@ -40,7 +40,7 @@ namespace MobileAppPT02.FragmentsForFoods
             DTHfloat.Click += (s, e) => {
                 var trans = Activity.SupportFragmentManager.BeginTransaction();
                 trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-                trans.Add(Resource.Id.fragmentContainer, new DTHrating(), "DTHrating");
+                trans.Replace(Resource.Id.fragmentContainer, new DTHrating(), "DTHrating");
                 trans.AddToBackStack(null);
                 trans.Commit();
                 return;

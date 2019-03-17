@@ -37,7 +37,7 @@ namespace MobileAppPT02.FragmentsForTourist
             sjbcfloat.Click += (s, e)=>{
                 var trans = Activity.SupportFragmentManager.BeginTransaction();
                 trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-                trans.Add(Resource.Id.fragmentContainer, new SjbcRating(), "SjbcRating");
+                trans.Replace(Resource.Id.fragmentContainer, new SjbcRating(), "SjbcRating");
                 trans.AddToBackStack(null);
                 trans.Commit();
                 return;

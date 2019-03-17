@@ -10,6 +10,7 @@
 	
 	<TextView	
 		android:text="Hi!"
+		
 		android:textStyle="bold"
 		android:textSize="90sp"
 		android:layout_marginTop="116dp"
@@ -25,6 +26,8 @@
 		android:layout_height="wrap_content"
 		android:textAlignment="textEnd"
 		android:layout_marginTop="240dp"
+
+		android:textStyle="bold"
 		android:textColor="@color/textColorPrimary"
 		android:textAppearance="?android:attr/textAppearanceMedium"
 		android:id="@+id/textView2" />
@@ -35,6 +38,8 @@
 		android:layout_height="wrap_content"
 		android:textAlignment="textEnd"
 		android:layout_marginTop="260dp"
+
+		android:textStyle="bold"
 		android:textColor="@color/textColorPrimary"
 		android:textAppearance="?android:attr/textAppearanceMedium"
 		android:id="@+id/textView2" />
@@ -45,6 +50,8 @@
 		android:layout_height="wrap_content"
 		android:textAlignment="textEnd"
 		android:layout_marginTop="280dp"
+		
+		android:textStyle="bold"
 		android:textColor="@color/textColorPrimary"
 		android:textAppearance="?android:attr/textAppearanceMedium"
 		android:id="@+id/textView2" />
@@ -56,6 +63,8 @@
 		android:layout_marginTop="550dp"
 		android:layout_width="match_parent"
 		android:layout_height="100dp"
+
+		android:textStyle="bold"
 		android:gravity="center"
 		android:id="@+id/OpenBottomSheet" />
 
