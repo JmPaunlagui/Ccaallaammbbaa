@@ -1,19 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Android.Support.V4.App;
+using SupportFragment = Android.Support.V4.App.Fragment;
+using SupportFragmentManager = Android.Support.V4.App.FragmentManager;
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Util;
-using Android.Views;
 using Android.Widget;
 using MobileAppPT02.Fragments;
-using SupportFragment = Android.Support.V4.App.Fragment;
+
 using Android.Support.V7.App;
-using Android.Support.Design.Widget;
+using Android.Support.V4.View;
 
 namespace MobileAppPT02
 {
@@ -31,19 +28,65 @@ namespace MobileAppPT02
             SetContentView(Resource.Layout.activity_home);
             Log.Debug(TAG, "Home activity deployed");
 
-            TextView textView = FindViewById<TextView>(Resource.Id.OpenBottomSheet);
-            textView.Click += TextView_Click;
+            ViewPager viewPagerr = FindViewById<ViewPager>(Resource.Id.viewPager);
+            SetUpViewPager(viewPagerr);
 
         }
 
-        private void TextView_Click(object sender, EventArgs e)
-        {          
-           var trans = SupportFragmentManager.BeginTransaction();
-           trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-           trans.Add(Resource.Id.fragmentContainer, new MaincontainerFragment(), "MaincontainerFragment" );
-           trans.AddToBackStack(null);
-           trans.Commit();
-           return;
+        private void SetUpViewPager(ViewPager viewPagerr)
+        {
+            TabAdapter adapter = new TabAdapter(SupportFragmentManager);
+            adapter.AddFragment(new HomeFragment(), "HomeFragment");
+            adapter.AddFragment(new MaincontainerFragment(), "MaincontainerFragment");
+            adapter.AddFragment(new AboutFragment(), "AboutFragment");
+
+            viewPagerr.Adapter = adapter;
+        }        
+
+        public class TabAdapter : FragmentPagerAdapter
+        {
+            public List<SupportFragment> Fragmentss { get; set; }
+            public List<string> FragmentNames { get; set; }
+
+            public TabAdapter(SupportFragmentManager sfm) : base(sfm)
+            {
+                Fragmentss = new List<SupportFragment>();
+                FragmentNames = new List<string>();
+            }
+            public void AddFragment(SupportFragment fragment, string name)
+            {
+                Fragmentss.Add(fragment);
+                FragmentNames.Add(name);
+            }
+            public override int Count
+            {
+                get
+                {
+                    return Fragmentss.Count;
+                }
+            }
+            public override SupportFragment GetItem(int position)
+            {
+                return Fragmentss[position];
+            }
         }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+        }
+        protected override void OnPause()
+        {
+            base.OnPause();
+        }
+        protected override void OnStop()
+        {
+            base.OnStop();
+        }
+        protected override void OnDestroy()
+        {
+            base.OnDestroy();
+        }
+       
     }
 }

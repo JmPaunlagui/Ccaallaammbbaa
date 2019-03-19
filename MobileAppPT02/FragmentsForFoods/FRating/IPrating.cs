@@ -27,5 +27,29 @@ namespace MobileAppPT02.FragmentsForFoods.FRating
             View vvv = inflater.Inflate(Resource.Layout.Bottom_sheet_IP_Rating ,container, false);
             return vvv;
         }
+        public override void OnResume()
+        {
+            base.OnResume();
+        }
+        public override void OnPause()
+        {
+            base.OnPause();
+        }
+        public override void OnStop()
+        {
+            base.OnStop();
+        }
+        public override void OnDestroyView()
+        {
+            base.OnDestroyView();
+        }
+        public override void OnDestroy()
+        {
+            base.OnDestroy();
+        }
+        public override void OnDetach()
+        {
+            base.OnDetach();
+        }
     }
 }

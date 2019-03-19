@@ -35,15 +35,39 @@ namespace MobileAppPT02.FragmentsForTourist
 
             sjbcfloat = view.FindViewById<FloatingActionButton>(Resource.Id.sjbcFloatAB);
             sjbcfloat.Click += (s, e)=>{
-                var trans = Activity.SupportFragmentManager.BeginTransaction();
-                trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-                trans.Replace(Resource.Id.fragmentContainer, new SjbcRating(), "SjbcRating");
+                var trans = ChildFragmentManager.BeginTransaction();
+
+                trans.Replace(Resource.Id.frameSJBC, new SjbcRating(), "SjbcRating");
                 trans.AddToBackStack(null);
                 trans.Commit();
                 return;
             };
 
             return view;
+        }
+        public override void OnResume()
+        {
+            base.OnResume();
+        }
+        public override void OnPause()
+        {
+            base.OnPause();
+        }
+        public override void OnStop()
+        {
+            base.OnStop();
+        }
+        public override void OnDestroyView()
+        {
+            base.OnDestroyView();
+        }
+        public override void OnDestroy()
+        {
+            base.OnDestroy();
+        }
+        public override void OnDetach()
+        {
+            base.OnDetach();
         }
     }
 }

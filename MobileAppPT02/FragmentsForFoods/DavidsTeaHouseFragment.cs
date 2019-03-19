@@ -38,9 +38,9 @@ namespace MobileAppPT02.FragmentsForFoods
 
             DTHfloat = view.FindViewById<FloatingActionButton>(Resource.Id.dthFloatAB);
             DTHfloat.Click += (s, e) => {
-                var trans = Activity.SupportFragmentManager.BeginTransaction();
-                trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-                trans.Replace(Resource.Id.fragmentContainer, new DTHrating(), "DTHrating");
+                var trans = ChildFragmentManager.BeginTransaction();
+              
+                trans.Replace(Resource.Id.frameDTH, new DTHrating(), "DTHrating");
                 trans.AddToBackStack(null);
                 trans.Commit();
                 return;
@@ -48,6 +48,30 @@ namespace MobileAppPT02.FragmentsForFoods
 
             return view;
 
+        }
+        public override void OnResume()
+        {
+            base.OnResume();
+        }
+        public override void OnPause()
+        {
+            base.OnPause();
+        }
+        public override void OnStop()
+        {
+            base.OnStop();
+        }
+        public override void OnDestroyView()
+        {
+            base.OnDestroyView();
+        }
+        public override void OnDestroy()
+        {
+            base.OnDestroy();
+        }
+        public override void OnDetach()
+        {
+            base.OnDetach();
         }
     }
 }

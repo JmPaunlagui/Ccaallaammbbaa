@@ -46,12 +46,36 @@ namespace MobileAppPT02.Fragments
       
             return viewFood;
         }
+        public override void OnResume()
+        {
+            base.OnResume();
+        }
+        public override void OnPause()
+        {
+            base.OnPause();
+        }
+        public override void OnStop()
+        {
+            base.OnStop();
+        }
+        public override void OnDestroyView()
+        {
+            base.OnDestroyView();
+        }
+        public override void OnDestroy()
+        {
+            base.OnDestroy();
+        }
+        public override void OnDetach()
+        {
+            base.OnDetach();
+        }
 
         private void CvIP_Click(object sender, EventArgs e)
         {
             var transsss = Activity.SupportFragmentManager.BeginTransaction();
             transsss.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-            transsss.Replace(Resource.Id.fragmentContainer, new IpponYariFragment(), "IpponYariFragment");
+            transsss.Replace(Resource.Id.fC, new IpponYariFragment(), "IpponYariFragment");
             transsss.AddToBackStack(null);
             transsss.Commit();
             return;
@@ -61,7 +85,7 @@ namespace MobileAppPT02.Fragments
         {
             var transss = Activity.SupportFragmentManager.BeginTransaction();
             transss.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-            transss.Replace(Resource.Id.fragmentContainer, new TonTonsFragment(), "TonTonsFragment");           
+            transss.Replace(Resource.Id.fC, new TonTonsFragment(), "TonTonsFragment");           
             transss.AddToBackStack(null);
             transss.Commit();
             return;
@@ -71,7 +95,7 @@ namespace MobileAppPT02.Fragments
         {
             var transs = Activity.SupportFragmentManager.BeginTransaction();
             transs.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-            transs.Replace(Resource.Id.fragmentContainer, new DingHaoFragment(), "DingHaoFragment");
+            transs.Replace(Resource.Id.fC, new DingHaoFragment(), "DingHaoFragment");
             transs.AddToBackStack(null);
             transs.Commit();
             return;
@@ -81,7 +105,7 @@ namespace MobileAppPT02.Fragments
         {
             var trans = Activity.SupportFragmentManager.BeginTransaction();
             trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-            trans.Replace(Resource.Id.fragmentContainer, new DavidsTeaHouseFragment(), "DavidsTeaHouseFragment");
+            trans.Replace(Resource.Id.fC, new DavidsTeaHouseFragment(), "DavidsTeaHouseFragment");
             trans.AddToBackStack(null);
             trans.Commit();
             return;

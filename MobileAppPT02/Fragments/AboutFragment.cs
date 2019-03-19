@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace MobileAppPT02.Fragments
 {
-    public class HistoryFragment : Android.Support.V4.App.Fragment
+    public class AboutFragment : Android.Support.V4.App.Fragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -24,10 +24,8 @@ namespace MobileAppPT02.Fragments
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            View viewHistory = inflater.Inflate(Resource.Layout.fragmentHistory, container, false);
-            Android.Support.V7.Widget.Toolbar toolbar = viewHistory.FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.tooLbar);
-            toolbar.Title = "Calambeño";
-            return viewHistory;
+            View view = inflater.Inflate(Resource.Layout.fragmentAbout, container, false);
+            return view;
         }
         public override void OnResume()
         {

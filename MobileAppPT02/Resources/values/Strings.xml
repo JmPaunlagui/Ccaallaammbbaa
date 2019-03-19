@@ -5,12 +5,17 @@
     <string name="For">for a place to</string>
     <string name="Hang">Hang out?</string>
 
+  
     <string name="dthtxt1">Filipino and Chinese Cuisine</string>
     <string name="dthtxt2">National Hwy Manila, Philippines 4027</string>
     <string name="dthtxt3">(049) 545-2834</string>
     <string name="dthtxt4">www.davidsteahouse.net</string>
-    <string name ="dthtxt5" >Monday to Sunday : 10:00 AM to 10:00 PM</string>
+    <string name="dthtxt5">Monday to Sunday : 10:00 AM to 10:00 PM</string>
+  
+    <string name="dthRT1">Davids Tea House is located along the National Highway. This is much convenient for regular and traveling customers who wants to eat Chinese food without the hassle of crowded malls in the city. Good food and great staffs make this our favorite place to be whenever we feel like eating out. Special occasions? They have a great space to accommodate those special occasions may it be business meetings to fabulous wedding receptions! Hey, did you know they deliver too? Yup, just consider the time the preparation and a delivery time when ordering. Hope this helps!</string>
+    <string name="dthRT2">The place is clean and cozy but we were not so impressed by any of the food variants that we had. Maybe we just failed to choose the best food in the menu. The price we paid to my opinion is quite high. I am giving 3 stars not because of the food but because of the orderliness of the place.</string>
 
+  
     <string name="dhtxt1">Chinese Cuisine and Filipino</string>
     <string name="dhtxt2">National Hwy, 4027, Calamba City, Laguna</string>
     <string name="dhtxt3">(049) 545-1905</string>
@@ -22,13 +27,50 @@
     <string name="dhtxt9">Saturday : 10:00 AM to 9:00 PM</string>
     <string name="dhtxt10">Sunday : 9:00 AM to 8:00 PM</string>
   
+    <string name="dhRT1">Always a very nice place to eat. The staff are very kind and accommodating even to large groups.  I like the lemon chicken</string>
+    <string name="dhRT2">A nice restaurant People seems nice Presentation of the menu is superb I really liked the ambient lighting</string>
+  
+  
     <string name="iptxt1">Japanese Cuisine</string>
     <string name="iptxt2">Elejorde, 4027, Calamba City, Laguna</string>
     <string name="iptxt3">Monday to Sunday:  11:00 AM to 2:00 PM and 5:00 PM to 11:00 PM</string>
+  
+    <string name="ipRT1">My “Go-to” sushi place</string>
+    <string name="ipRT2">Authentic Japanese food. I love it. I want to go here everyday.</string>
     
+  
     <string name="ttstxt1">Sisig and Other Filipino Homemade meals. </string>
     <string name="ttstxt2">Crossing, 4027, Calamba City, Laguna</string>
     <string name="ttstxt3">Monday to Sunday: 5:00 AM – 10:00 PM</string>
+  
+    <string name="ttRT1">The most famous sisig in Laguna. A go-to place for everyone with its great price with great flavor. Warm you stomachs with Ton-tons sizzling goods or add great dishes partnered with its soup.</string>
+    <string name="ttRT2">The BEST SISIG IN WHOLE LAGUNA. THE BEST.</string>
+  
+  
+    <string name="rstxt1">Just beside the St. John the Baptist church, you will see Dr. Jose Rizal’s family home where Jose Rizal grew up. This house is not the actual house due to the Japanese destroying it during the occupation. Rather, it is an accurate representation of the house that the Rizal’s lived. It has been transformed into a museum that houses The Rizal family’s heirlooms and history. It also exhibits items and artifacts used during the Spanish age and has a plethora of information about the Rizal family and Jose Rizal’s deeds.</string>
+    <string name="rstxt2"> J. P. Rizal St, Calamba, Laguna</string>
+    <string name="rstxt3"> (63) 49-54520110</string>
+    <string name="rstxt4">There is no entrance fee for entering the shrine. Due to this, you will frequently see students from nearby universities and schools studying, relaxing, or doing their projects here for a convenient place to do their tasks.</string>
+    <string name="rstxt5">The shrine also has a souvenir shop inside.</string>
+    <string name="rstxt6">Francisco Mercado and Teodora Alonso, parents of Dr. Jose Rizal, is buried inside the shrine near a narra tree.</string>
+    <string name="rstxt7">The well beside the shrine is not a reconstruction but is the actual well that the Rizal’s used. It is the most ancient object in the shrine.</string>
+  
+    <string name="rsRT1">Rizal Shrine is a must to appreciate the high ideals of every Filipino. Rizal bust in the souvenir shop is a million worth as a souvenir to every friend, home, officemates and constituents. For a minimum fee, you will be reminded of your wonderful experience of the Shrine. Truly a life worth living for.</string>
+    <string name="rsRT2">It was suggested we visited Rizals shrine to give me (a UK citizen) a greater insight into the history of a national hero of the Philippines, this did not disappoint. His house was large and well the room displays well presented. The adjoining museum was also well present and informative, well worth a visit.</string>
+  
 
-
+    <string name="sjbctxt1">Built in 1859, St. John the Baptist Church is famous for its historical significance and is where the Philippine national hero, Dr. Jose Rizal, was baptized and frequently went to mass with his family. Since its construction, masses and services are still held to this day and devotees and tourists may visit its halls anytime.</string>
+    <string name="sjbctxt2">Dr. Jose Rizal’s baptismal record has been found within the archives of this church and is still preserved to this day.</string>
+    <string name="sjbctxt3">Throughout history, the church has survived countless earthquakes, typhoons, and was even burnt down during the Japanese occupation.</string>
+    <string name="sjbctxt4"> J. P. Rizal St, Calamba City, Laguna</string>
+    <string name="sjbctxt5">0945 751 2611</string>
+  
+    <string name="sjbcRT1">Full of history and spacious area. Good for family bonding when going to Church.</string>
+    <string name="sjbcRT2">Good old church. Overcrowded during Sunday. Very Small parking area.</string>
+  
+    <string name="cltxt1">Calamba City is an industrial city and one of the richest city in the whole Philippines. With that said, Calamba City is prominent amongst other competing cities in the Philippines.</string>
+  <string name="cltxt2">Calamba started from humble beginnings when it was settled by our ancestors. The specific place is barangay sucol. This barangay resides in the shores of Laguna Bay and soon after, it was settled by Spanish hacienderos until Calamba is conjoined with Cabuyao City(Calamba and Cabuyao were formerly called "Tabuco".</string>
+  <string name="cltxt3">Calamba then became independent in 1742. It became a Pueblo or a town in 1770. Fast forward to 1861 then it became the birthplace of Dr. Jose Protacio Rizal, the national hero of the Philippines. Since then, Many hardships like WWII(World war 2) and the thriving of the Philippines came and it became a city on April 21, 2001.</string>
+  
+  
 </resources>

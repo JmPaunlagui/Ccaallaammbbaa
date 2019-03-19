@@ -45,7 +45,7 @@ namespace MobileAppPT02.Fragments
         {
             var transs = Activity.SupportFragmentManager.BeginTransaction();
             transs.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-            transs.Replace(Resource.Id.fragmentContainer, new SJBCFragment(), "SJBCFragment");
+            transs.Replace(Resource.Id.tC, new SJBCFragment(), "SJBCFragment");
             transs.AddToBackStack(null);
             transs.Commit();
             return;
@@ -55,10 +55,34 @@ namespace MobileAppPT02.Fragments
         {
             var trans = Activity.SupportFragmentManager.BeginTransaction();
             trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
-            trans.Replace(Resource.Id.fragmentContainer, new RizalSFragment(), "RizalSFragment");
+            trans.Replace(Resource.Id.tC, new RizalSFragment(), "RizalSFragment");
             trans.AddToBackStack(null);
             trans.Commit();
             return;
+        }
+        public override void OnResume()
+        {
+            base.OnResume();
+        }
+        public override void OnPause()
+        {
+            base.OnPause();
+        }
+        public override void OnStop()
+        {
+            base.OnStop();
+        }
+        public override void OnDestroyView()
+        {
+            base.OnDestroyView();
+        }
+        public override void OnDestroy()
+        {
+            base.OnDestroy();
+        }
+        public override void OnDetach()
+        {
+            base.OnDetach();
         }
     }
 }

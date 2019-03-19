@@ -60,9 +60,9 @@ namespace MobileAppPT02.Fragments
 
             var trans = Activity.SupportFragmentManager.BeginTransaction();
 
-            trans.Replace(Resource.Id.frameLayout1, mFragment3, "HistoryFragment");//NOT bottom_navigation, it must be the container
+            trans.Add(Resource.Id.frameLayout1, mFragment3, "HistoryFragment");//NOT bottom_navigation, it must be the container
             trans.Hide(mFragment3);
-            trans.Replace(Resource.Id.frameLayout1, mFragment2, "TouristFragment");
+            trans.Add(Resource.Id.frameLayout1, mFragment2, "TouristFragment");
             trans.Hide(mFragment2);
             trans.Add(Resource.Id.frameLayout1, mFragment1, "FoodFragment");
 
@@ -73,6 +73,29 @@ namespace MobileAppPT02.Fragments
             return view;
 
         }
-       
+        public override void OnResume()
+        {
+            base.OnResume();
+        }
+        public override void OnPause()
+        {
+            base.OnPause();
+        }
+        public override void OnStop()
+        {
+            base.OnStop();
+        }
+        public override void OnDestroyView()
+        {
+            base.OnDestroyView();
+        }
+        public override void OnDestroy()
+        {
+            base.OnDestroy();
+        }
+        public override void OnDetach()
+        {
+            base.OnDetach();
+        }
     }
 }
