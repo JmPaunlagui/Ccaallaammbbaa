@@ -31,7 +31,7 @@
 				android:layout_height="wrap_content"
 				android:layout_marginTop="10dp"
 				android:layout_marginLeft="10dp"
-				
+				android:textColor="@color/colorText"v
 				android:gravity="center"
 				android:textSize="25sp"
 				android:textStyle="bold"
@@ -57,8 +57,9 @@
 						android:layout_gravity="center"
 						android:gravity="center"
 						android:textSize="35sp"
+							android:textColor="@color/colorText"
 						android:textStyle="bold"
-						android:text="4.0" />
+						android:text="4.7" />
 					<me.zhanghai.android.materialratingbar.MaterialRatingBar
 						android:id="@+id/total_star_rating"
 						style="@style/Widget.MaterialRatingBar.RatingBar"
@@ -67,7 +68,7 @@
 						android:layout_gravity="center"
 						android:layout_marginBottom="5dp"
 						android:layout_marginTop="5dp"
-						android:rating="4"
+						android:rating="4.5"
 						android:isIndicator="true"
 						android:maxHeight="20dp"
 						android:minHeight="20dp"
@@ -82,9 +83,9 @@
 						android:layout_marginLeft="-5dp"
 						android:drawableLeft="@drawable/ic_person_primary_dark"
 						android:gravity="center|left"
-					
+					android:textColor="@color/colorText"
 						android:textStyle="bold"
-						android:text="80 total" />
+						android:text="71 total" />
 				</LinearLayout>
 
                 <LinearLayout
@@ -120,7 +121,7 @@
                                     android:layout_gravity="center|left"
                                     android:gravity="center"
                                     android:textSize="13sp"
-									
+									android:textColor="@color/colorText"
 									android:textStyle="bold"
                                     android:text="5" />
 
@@ -158,7 +159,7 @@
                                     android:layout_gravity="center|left"
                                     android:gravity="center"
                                     android:textSize="13sp"
-									
+									android:textColor="@color/colorText"
 									android:textStyle="bold"
                                     android:text="4" />
 
@@ -166,7 +167,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="100px"
+									android:layout_width="150px"
 									android:background="@color/material_grey_300"					
 								/>
                             </LinearLayout>
@@ -197,7 +198,7 @@
                                     android:layout_gravity="center|left"
                                     android:gravity="center"
                                     android:textSize="13sp"
-									
+									android:textColor="@color/colorText"
 									android:textStyle="bold"
                                     android:text="3" />
 
@@ -233,7 +234,7 @@
                                     android:layout_gravity="center|left"
                                     android:gravity="center"
                                     android:textSize="13sp"
-									
+									android:textColor="@color/colorText"
 									android:textStyle="bold"
                                     android:text="2" />
 
@@ -241,7 +242,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="30px"
+									android:layout_width="10px"
 									android:background="@color/material_grey_300"					
 								/>
                             </LinearLayout>
@@ -271,7 +272,7 @@
                                     android:layout_gravity="center|left"
                                     android:gravity="center"
                                     android:textSize="13sp"
-									
+									android:textColor="@color/colorText"
 									android:textStyle="bold"
                                     android:text="1" />
 
@@ -279,7 +280,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="15px"
+									android:layout_width="1px"
 									android:background="@color/material_grey_300"					
 								/>
                             </LinearLayout>
@@ -311,6 +312,7 @@
 				
 				>
 				<TextView
+					android:textColor="@color/colorText"
 				android:layout_marginTop="10dp"
 				android:layout_marginLeft="10dp"
 				android:layout_width="wrap_content"
@@ -331,15 +333,16 @@
 				<ImageView
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/mauDraw"
+					android:src="@drawable/userFemale"
 					android:layout_marginTop="50dp"
 					android:layout_marginLeft="10dp"
 						/>
 
 				<TextView
+					android:textColor="@color/colorText"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="John Moises E. Paunlagui "
+					android:text="reymundrivera24"
 					android:layout_gravity="center_horizontal"
 					android:layout_marginTop="50dp"
 					android:layout_marginLeft="80dp"
@@ -359,6 +362,7 @@
 					android:layout_marginLeft="80dp"
 				/>	
 				<TextView
+					android:textColor="@color/colorText"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:text="03/17/2019"
@@ -367,6 +371,7 @@
 						android:id="@+id/textView1" 
 					/>
 				<TextView
+					android:textColor="@color/colorText"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 					android:layout_marginLeft="10dp"
@@ -395,6 +400,7 @@
 				
 				>
 				<TextView
+					android:textColor="@color/colorText"
 				android:layout_marginTop="10dp"
 				android:layout_marginLeft="10dp"
 				android:layout_width="wrap_content"
@@ -415,15 +421,16 @@
 				<ImageView
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/mauDraw"
+					android:src="@drawable/userMale"
 					android:layout_marginTop="50dp"
 					android:layout_marginLeft="10dp"
 						/>
 
 				<TextView
+					android:textColor="@color/colorText"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="John Moises E. Paunlagui "
+					android:text="Victor 0  "
 					android:layout_gravity="center_horizontal"
 					android:layout_marginTop="50dp"
 					android:layout_marginLeft="80dp"
@@ -433,7 +440,7 @@
 					style="@style/Widget.MaterialRatingBar.RatingBar.Small"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:rating="5"
+					android:rating="4"
 					android:isIndicator="true"
 					android:maxHeight="20dp"
 					android:minHeight="20dp"
@@ -443,6 +450,7 @@
 					android:layout_marginLeft="80dp"
 				/>	
 				<TextView
+					android:textColor="@color/colorText"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:text="03/17/2019"
@@ -451,6 +459,7 @@
 						android:id="@+id/textView1" 
 					/>
 				<TextView
+					android:textColor="@color/colorText"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 					android:layout_marginLeft="10dp"

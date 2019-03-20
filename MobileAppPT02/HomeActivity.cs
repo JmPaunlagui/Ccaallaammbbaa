@@ -14,7 +14,7 @@ using Android.Support.V4.View;
 
 namespace MobileAppPT02
 {
-    [Activity(Label = "HomeActivity", Theme = "@style/AppTheme")]
+    [Activity(Label = "HomeActivity", Theme = "@style/AppTheme", ScreenOrientation = Android.Content.PM.ScreenOrientation.Locked)]
     public class HomeActivity : AppCompatActivity
     {
         static readonly string TAG = "Y: " + typeof(HomeActivity).Name;

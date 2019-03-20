@@ -76,6 +76,7 @@
 					>
 			
 					<TextView
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"					
 						android:textSize="18sp"
@@ -85,6 +86,7 @@
 					/>			
 
 					<TextView			
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:textSize="16sp"
@@ -105,6 +107,7 @@
 					/>
 
 					<TextView
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:textSize="18sp"
@@ -114,6 +117,7 @@
 					/>		
 
 					<TextView
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:textSize="16sp"
@@ -121,7 +125,8 @@
 						android:text="Address"
 					/>		
 				
-					<TextView			
+					<TextView	
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:padding="12dp"
@@ -137,6 +142,7 @@
 					/>
 
 					<TextView
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"					
 						android:textSize="18sp"
@@ -146,6 +152,7 @@
 					/>			
 
 					<TextView			
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:textSize="16sp"
@@ -171,7 +178,7 @@
 			android:layout_width="wrap_content"
 			app:layout_anchor="@id/app_bar_layout"
 			app:layout_anchorGravity="bottom|right|end"
-			android:src="@drawable/hiratec"
+			android:src="@drawable/icons8_christmas_star_26px_1"
 		  android:id="@+id/ttFloatAB"
 			android:clickable="true" />
 

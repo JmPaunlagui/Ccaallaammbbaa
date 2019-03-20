@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+	
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 	android:background="@color/colorBackgroundDT"
 	>
+	<TextView
+		android:layout_marginTop="150dp"
+		android:text="Calambeño"
+		android:gravity="center"
+		android:textStyle="bold"
+		android:textSize="38sp"
+		android:textColor="@color/colorText"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1" />
 
 	<TextView
-		    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-		android:text="About"
+		android:layout_marginTop="18dp"
+		android:text="Developed by"
 		android:gravity="center"
-		android:textSize="50sp"
-		/>
+		android:textStyle="bold"
+		android:textColor="@color/colorText"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:id="@+id/textView2" />
+
+	<TextView
+		android:padding="8dp"
+		android:textAlignment="center"
+		android:gravity="center_vertical"
+		android:layout_gravity="center_horizontal"
+		android:text="@string/ddevs"
+		android:textColor="@color/colorText"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2" /> 
+
+	<TextView
+		android:padding="8dp"
+		android:textAlignment="center"
+		android:gravity="center_vertical"
+		android:layout_gravity="center_horizontal"
+		android:text="@string/des"
+		android:textColor="@color/colorText"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:id="@+id/textView2" /> 
+
+
+
 
 </LinearLayout>

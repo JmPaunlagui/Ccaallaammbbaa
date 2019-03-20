@@ -9,7 +9,7 @@ using Android.Content;
 
 namespace MobileAppPT02
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Locked)]
     public class SplashScreenActivity : AppCompatActivity
     {
         static readonly string TAG = "X: " + typeof(SplashScreenActivity).Name;
@@ -18,6 +18,9 @@ namespace MobileAppPT02
         {
             base.OnCreate(savedInstanceState, persistableBundle);
             Log.Debug(TAG, "SplashScreenActivity.OnCreate");
+
+           // RequestedOrientation = Android.Content.PM.ScreenOrientation.Portrait;
+
         }
         protected override void OnResume()
         {
