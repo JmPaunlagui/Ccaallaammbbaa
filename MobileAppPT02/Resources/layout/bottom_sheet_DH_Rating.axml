@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-	android:background="@android:color/white"
+	android:background="@color/colorBackgroundDT"
 	>
 <LinearLayout 
     android:layout_width="match_parent"
@@ -86,7 +86,7 @@
 						android:gravity="center|left"
 					
 						android:textStyle="bold"
-						android:text="80 total" />
+						android:text="199 total" />
 				</LinearLayout>
 
                 <LinearLayout
@@ -130,7 +130,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="200px"
+									android:layout_width="100dp"
 									android:background="@color/material_grey_300"					
 								/>
 
@@ -169,7 +169,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="100px"
+									android:layout_width="90dp"
 									android:background="@color/material_grey_300"					
 								/>
                             </LinearLayout>
@@ -208,7 +208,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="45px"
+									android:layout_width="40dp"
 									android:background="@color/material_grey_300"					
 								/>
                             </LinearLayout>
@@ -244,7 +244,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="30px"
+									android:layout_width="10dp"
 									android:background="@color/material_grey_300"					
 								/>
                             </LinearLayout>
@@ -282,7 +282,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="15px"
+									android:layout_width="10dp"
 									android:background="@color/material_grey_300"					
 								/>
                             </LinearLayout>

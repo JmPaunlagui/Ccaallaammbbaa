@@ -54,6 +54,7 @@
 			android:layout_height="match_parent"
 			android:clipToPadding="false"
 			app:layout_behavior="@string/appbar_scrolling_view_behavior"
+			android:background="@color/colorBackgroundDT"
 			>
 
 			<android.support.v7.widget.CardView
@@ -73,6 +74,7 @@
 					>
 			
 					<TextView
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"					
 						android:textSize="18sp"
@@ -81,7 +83,8 @@
 						android:text="Servings"
 					/>			
 
-					<TextView			
+					<TextView		
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:textSize="16sp"
@@ -102,6 +105,7 @@
 					/>
 
 					<TextView
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:textSize="18sp"
@@ -111,6 +115,7 @@
 					/>		
 
 					<TextView
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:textSize="16sp"
@@ -118,7 +123,8 @@
 						android:text="Address"
 					/>		
 				
-					<TextView			
+					<TextView	
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:padding="12dp"
@@ -128,6 +134,7 @@
 					/>
 
 					<TextView
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:textSize="16sp"
@@ -135,7 +142,8 @@
 						android:text="Contact"
 					/>	
 				
-					<TextView			
+					<TextView	
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:padding="12dp"
@@ -145,6 +153,7 @@
 					/>
 
 					<TextView
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:textSize="16sp"
@@ -152,7 +161,8 @@
 						android:text="Website"
 					/>	
 				
-					<TextView			
+					<TextView	
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:padding="12dp"
@@ -168,6 +178,7 @@
 					/>
 
 					<TextView
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"					
 						android:textSize="18sp"
@@ -177,6 +188,7 @@
 					/>			
 
 					<TextView			
+						android:textColor="@color/colorText"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
 						android:textSize="16sp"

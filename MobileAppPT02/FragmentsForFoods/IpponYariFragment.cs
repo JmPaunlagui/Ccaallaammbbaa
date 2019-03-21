@@ -37,8 +37,8 @@ namespace MobileAppPT02.FragmentsForFoods
             IPfloat = view.FindViewById<FloatingActionButton>(Resource.Id.ipFloatAB);
             IPfloat.Click += (s, e) => {
                 var trans = ChildFragmentManager.BeginTransaction();
- 
-                trans.Replace(Resource.Id.frameIP, new IPrating(), "IPrating");
+                trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
+                trans.Add(Resource.Id.frameIP, new IPrating(), "IPrating");
                 trans.AddToBackStack(null);
                 trans.Commit();
                 return;

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-	android:background="@android:color/white"
+	android:background="@color/colorBackgroundDT"
 	>
 <LinearLayout 
     android:layout_width="match_parent"
@@ -60,7 +60,7 @@
 						android:gravity="center"
 						android:textSize="35sp"
 						android:textStyle="bold"
-						android:text="4.0" />
+						android:text="4.1" />
 					<me.zhanghai.android.materialratingbar.MaterialRatingBar
 						android:id="@+id/total_star_rating"
 						style="@style/Widget.MaterialRatingBar.RatingBar"
@@ -69,7 +69,7 @@
 						android:layout_gravity="center"
 						android:layout_marginBottom="5dp"
 						android:layout_marginTop="5dp"
-						android:rating="4"
+						android:rating="4.1"
 						android:isIndicator="true"
 						android:maxHeight="20dp"
 						android:minHeight="20dp"
@@ -86,7 +86,7 @@
 						android:gravity="center|left"
 						android:textColor="@color/colorText"
 						android:textStyle="bold"
-						android:text="80 total" />
+						android:text="242 total" />
 				</LinearLayout>
 
                 <LinearLayout
@@ -130,7 +130,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="200px"
+									android:layout_width="100dp"
 									android:background="@color/material_grey_300"					
 								/>
 
@@ -168,7 +168,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="100px"
+									android:layout_width="95dp"
 									android:background="@color/material_grey_300"					
 								/>
                             </LinearLayout>
@@ -207,7 +207,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="45px"
+									android:layout_width="55dp"
 									android:background="@color/material_grey_300"					
 								/>
                             </LinearLayout>
@@ -243,7 +243,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="30px"
+									android:layout_width="20dp"
 									android:background="@color/material_grey_300"					
 								/>
                             </LinearLayout>
@@ -281,7 +281,7 @@
 									android:layout_marginLeft="3dp"
 									 android:layout_gravity="center"	
 									android:layout_height="10dp"
-									android:layout_width="15px"
+									android:layout_width="8dp"
 									android:background="@color/material_grey_300"					
 								/>
                             </LinearLayout>

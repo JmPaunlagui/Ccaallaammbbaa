@@ -45,21 +45,23 @@
 						android:layout_height="170dp"
 						android:layout_gravity="center_horizontal"
 						/>
-					<TextView                
+					<TextView    
+						android:textColor="@color/colorText"
 						android:layout_width="fill_parent"     
 						android:layout_height="wrap_content"   
 						android:textAppearance="?android:attr/textAppearanceMedium"   
-						android:textColor="#333333"   
+						
 						android:text="David's Tea House" 
 						android:id="@+id/textView"
 						android:layout_gravity="center_horizontal"
 						android:layout_marginTop="5dp"
 						android:layout_marginLeft="5dp" />
-					<TextView                
+					<TextView  
+						android:textColor="@color/colorText"
 						android:layout_width="fill_parent"     
 						android:layout_height="wrap_content"   
 						android:textAppearance="?android:attr/textAppearanceMedium"   
-						android:textColor="#333333"   
+						  
 						android:text="Learn more" 
 						android:textSize="14sp"						
 						android:id="@+id/tvDTH"
@@ -98,21 +100,23 @@
 						android:layout_height="170dp"
 						android:layout_gravity="center_horizontal"
 						/>
-					<TextView                
+					<TextView    
+						android:textColor="@color/colorText"
 						android:layout_width="fill_parent"     
 						android:layout_height="wrap_content"   
 						android:textAppearance="?android:attr/textAppearanceMedium"   
-						android:textColor="#333333"   
+						  
 						android:text="Ding Hao" 
 						android:id="@+id/textView"
 						android:layout_gravity="center_horizontal"
 						android:layout_marginTop="5dp"
 						android:layout_marginLeft="5dp" />
-					<TextView                
+					<TextView      
+						android:textColor="@color/colorText"
 						android:layout_width="fill_parent"     
 						android:layout_height="wrap_content"   
 						android:textAppearance="?android:attr/textAppearanceMedium"   
-						android:textColor="#333333"  
+						
 						android:textSize="14sp"	
 						android:text="Learn more" 
 						android:id="@+id/tvDH"
@@ -151,21 +155,23 @@
 						android:layout_height="170dp"
 						android:layout_gravity="center_horizontal"
 						/>
-					<TextView                
+					<TextView            
+						android:textColor="@color/colorText"
 						android:layout_width="fill_parent"     
 						android:layout_height="wrap_content"   
 						android:textAppearance="?android:attr/textAppearanceMedium"   
-						android:textColor="#333333"   
+						 
 						android:text="Ippon Yari" 
 						android:id="@+id/textView"
 						android:layout_gravity="center_horizontal"
 						android:layout_marginTop="5dp"
 						android:layout_marginLeft="5dp" />
-					<TextView                
+					<TextView
+						android:textColor="@color/colorText"
 						android:layout_width="fill_parent"     
 						android:layout_height="wrap_content"   
 						android:textAppearance="?android:attr/textAppearanceMedium"   
-						android:textColor="#333333"  
+					
 						android:textSize="14sp"	
 						android:text="Learn more" 
 						android:id="@+id/tvIP"
@@ -204,21 +210,23 @@
 						android:layout_height="170dp"
 						android:layout_gravity="center_horizontal"
 						/>
-					<TextView                
+					<TextView  
+						android:textColor="@color/colorText"
 						android:layout_width="fill_parent"     
 						android:layout_height="wrap_content"   
 						android:textAppearance="?android:attr/textAppearanceMedium"   
-						android:textColor="#333333"   
+						
 						android:text="Ton Ton's Sisig" 
 						android:id="@+id/textView"
 						android:layout_gravity="center_horizontal"
 						android:layout_marginTop="5dp"
 						android:layout_marginLeft="5dp" />
-					<TextView                
+					<TextView    
+						android:textColor="@color/colorText"
 						android:layout_width="fill_parent"     
 						android:layout_height="wrap_content"   
 						android:textAppearance="?android:attr/textAppearanceMedium"   
-						android:textColor="#333333"  
+					
 						android:textSize="14sp"						
 						android:text="Learn more" 
 						android:id="@+id/tvTTS"
